@@ -4,7 +4,12 @@ package bubblesort
 // wenn das linke größer ist als das rechte.
 // Gibt true zurück, wenn mindestens ein Tausch stattgefunden hat.
 func BubbleUp(arr []int) bool {
-	// TODO
+	for i:= 0; i< len(arr)-1; i++{
+          if arr[i] > arr[i+1] {
+			arr[i], arr[i+1] = arr[i+1], arr[i]
+			return true
+		  }
+	}
 	return false
 }
 
