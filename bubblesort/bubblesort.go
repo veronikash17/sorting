@@ -16,9 +16,7 @@ swapped := false
 
 // BubbleSort sortiert die übergebene Liste mittels des Bubble-Sort-Algorithmus.
 func BubbleSort(arr []int) {
-	for {
-		if !BubbleUp(arr) {
-			break
-		}
+	for BubbleUp(arr) {
+			
 }
 }
